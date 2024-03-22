@@ -167,31 +167,6 @@
         },
   
         methods: {
-           /* readData() {
-                db.collection("students")
-                .get()
-                .then((querySnapshot) => {
-                    var stdlist = [];
-                    querySnapshot.forEach((doc) => {
-                    stdlist.push({ id: doc.id, ...doc.data() });
-                    });
-                    this.students = stdlist;
-                });
-            },*/
-
-            /*//สำหรับอาจารย์
-            readDatatc() {
-              db.collection("teachers")
-              .get()
-              .then((querySnapshot) => {
-                  var teacherslist = [];
-                  querySnapshot.forEach((doc) => {
-                    teacherslist.push({ email: doc.email, ...doc.data() });
-                  });
-                  this.teachers = teacherslist;
-              });
-          },
-          ///*/
 
             autoRead() {
                 db.collection("students").onSnapshot((querySnapshot) => {
